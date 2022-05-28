@@ -1,0 +1,1114 @@
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+/*VARIABLE*/
+:root {
+	--yellow : #FFC309;
+	--lightgray : #A8A8A8;
+	--darkgray : #5E5E5E;
+	--white: #FFFFFF;
+	--violet: #8C15E9;
+	--blue: #2E73EA;
+	--neonblue: #22DDD2;
+	--navyblue: #172D67;
+	--dark: #17072B;
+	--common-font:'Lato', sans-serif ;
+  
+}
+
+/* CUSTOM BUTTON*/
+.js__btn-navyblue{
+	color: var(--white);
+	background-color: var(--navyblue);
+}
+
+.js__btn-navyblue:hover{
+	color: var(--white);
+	background-color: var(--blue);
+}
+
+.js__btn-blue{
+	color: var(--blue);
+	background-color: var(--white);
+}
+
+.js__btn-blue:hover{
+	color: var(--white);
+	background-color: var(--blue);
+}
+
+.js__btn-violet{
+	color: var(--white);
+	background-color: var(--violet);
+}
+
+.js__btn-violet:hover{
+	color: var(--violet);
+	background-color: var(--white);	
+}
+
+
+
+/* CUSTOM FONT COLOR */
+.text--yellow{
+	color: var(--yellow) !important;
+}
+.text--blue{
+	color: var(--blue) !important;
+}
+.text--navyblue{
+	color: var(--navyblue) !important;
+}
+.text--darkgray{
+	color: var(--darkgray) !important;
+}
+
+
+.text-40{
+	font-size: 40px;
+}
+.text-20{
+	font-size: 20px;
+}
+
+/*DEFAULT*/
+*{
+	font-family: var(--common-font) !important;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+  /*
+	2. Remove default margin
+  */
+  * {
+	margin: 0;
+  }
+  /*
+	3. Allow percentage-based heights in the application
+  */
+  html, body {
+	height: 100%;
+	
+  }
+  /*
+	Typographic tweaks!
+	4. Add accessible line-height
+	5. Improve text rendering
+  */
+  body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	
+  }
+  /*
+	6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+  }
+  /*
+	7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+	font: inherit;
+  }
+  /*
+	8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+
+  }
+
+p{
+	color: var(--darkgray);
+}
+
+h2,h3,h4{
+	margin-bottom: 3rem;
+}
+  /*
+	9. Create a root stacking context
+  */
+  #root, #__next {
+	isolation: isolate;
+  }
+
+
+a:link{
+	color: var(--white) !important;
+	cursor: pointer;
+}		
+a:hover{
+	color: var(--white) !important;
+}
+a:visited{
+	color: (internal value);
+	/*text-decoration: underline;
+	cursor: auto;*/
+}		
+a:link:active{
+	/*text-decoration: underline;*//*
+		color: (internal value);*/
+}
+a:visited:active	{
+/*	color: (internal value);
+*/
+}
+.z-navbar-nav li{
+	margin: 0 8px;
+	/*transition: border-bottom .5s;*/
+}
+
+.z-nav-item::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background: var(--white);
+	transition: width .3s;
+}
+
+.z-nav-item:hover::after{
+	
+     width: 100%;
+}
+
+.z-nav-item.active::after{
+	
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: var(--white);
+	transition: width .3s;
+}
+
+
+/* 	BACKGROUND */
+.js__bg-navyblue{
+	background-color: var(--navyblue);
+
+}
+
+.js__bg-blue{
+	background-color: var(--blue);
+
+}
+
+.js__bg-white{
+	background-color: var(--white);
+
+}
+
+/* NAVBAR */
+
+.navbar{
+	display: none;
+}
+.onscroll-show{
+	display: block;
+	transition: 3s;
+}
+.onscroll-hide{
+	display: none;
+	transition: 3s;
+}
+
+.z-navbar-bg-onscroll{
+	background-color: var(--navyblue);
+}
+
+/* CONTACT FORM */
+
+body.modal-open {
+    overflow: auto !important;
+}
+
+
+body.modal-open[style], .navbar {
+    padding-right: 0px !important;
+}
+
+/* HEADER */
+	.js__header{
+		background-color: var(--navyblue);
+		height: 100vh;		
+		padding-top: 150px;
+		-webkit-clip-path: polygon(0 0, 0 91%, 100% 100%, 100% 0);
+		clip-path: polygon(0 0, 0 91%, 100% 100%, 100% 0);
+	}
+
+		.js__header h1, .js__header h5, .js__header p, .js__header button{
+			margin: 1rem;
+		}
+
+    .js__header-contact-success{
+        background-color: var(--navyblue);
+		height: 60vh;		
+		padding-top: 150px;
+    }
+	.tech-bg{
+		background-image: url('img/tech-bg.png');
+		background-color: var(--navyblue);
+	}
+
+	.responsive {
+		width: 100%;
+		height: auto;
+	  }
+
+/* SECTION DIVISION LINE */
+.section-arrow{
+	padding: 0;
+	margin: auto;
+	text-align: center;
+}
+
+/* DEFAULT SETTINGS FOR SECTIONS */
+.section-container{
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+}
+
+.section-container p {
+	line-height: 2rem;
+}
+
+/* SECTION 1 */
+
+
+
+/* SECTION 4 */
+.section-container-navyblue{
+	-webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+	clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+	height: 400px;
+	background: rgb(23,45,103);
+	background: linear-gradient(180deg, rgba(23,45,103,1) 26%, rgba(23,7,43,1) 100%);
+}
+
+.section-container-blue{
+	-webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+	clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+	height: 500px;
+	background: rgb(46,115,234);
+	background: linear-gradient(180deg, rgba(46,115,234,1) 26%, rgb(21, 65, 141) 100%);
+}
+
+
+/* SECTION 5 */
+.hexa-container{
+	height: 0px;
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+.hexa--bg img{
+	position: absolute;
+	right: 1;
+	z-index: -1;
+	
+	
+}
+
+/* SECTION 6 */
+.horizontal{
+	display: flex;
+}
+
+.horizontal-line{
+	height: 2px;
+	width:100%;
+	background-color: var(--lightgray);
+	display: inline-block;
+}
+
+.inline{
+	display: inline-block;
+	word-wrap: normal;
+}
+
+
+
+
+/* CONTACT FORM */
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700|Roboto:400,600");
+.section-padding {
+    padding: 45px 0;
+}
+.section-dark {
+    background-color: #f9f9f9;
+    z-index: -2;
+}
+.form-control,
+.form-group .form-control {
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 0 2px, 100% 1px;
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center -webkit-calc(100% - 1px);
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background 0s ease-out;
+    -o-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+    float: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0
+}
+
+.form-control::-moz-placeholder,
+.form-group .form-control::-moz-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control:-ms-input-placeholder,
+.form-group .form-control:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control::-webkit-input-placeholder,
+.form-group .form-control::-webkit-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control[disabled],
+.form-control[readonly],
+.form-group .form-control[disabled],
+.form-group .form-control[readonly],
+fieldset[disabled] .form-control,
+fieldset[disabled] .form-group .form-control {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.form-control[disabled],
+.form-group .form-control[disabled],
+fieldset[disabled] .form-control,
+fieldset[disabled] .form-group .form-control {
+    background-image: none;
+    border-bottom: 1px dotted #D2D2D2
+}
+
+.form-group {
+    position: relative
+}
+
+.form-group.label-floating label.control-label,
+.form-group.label-placeholder label.control-label,
+.form-group.label-static label.control-label {
+    position: absolute;
+    pointer-events: none;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all
+}
+
+.form-group.label-floating label.control-label {
+    will-change: left, top, contents
+}
+
+.form-group.label-placeholder:not(.is-empty) label.control-label {
+    display: none
+}
+
+.form-group .help-block {
+    position: absolute;
+    display: none
+}
+
+.form-group.is-focused .form-control {
+    outline: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 100% 2px, 100% 1px;
+    background-size: 100% 2px, 100% 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s
+}
+
+.form-group.is-focused .form-control .material-input:after {
+    background-color: #009688
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label {
+    color: #009688
+}
+
+.form-group.is-focused.label-placeholder label,
+.form-group.is-focused.label-placeholder label.control-label {
+    color: #BDBDBD
+}
+
+.form-group.is-focused .help-block {
+    display: block
+}
+
+.form-group.has-warning .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-warning.is-focused .form-control {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5722), to(#ff5722)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#ff5722, #ff5722), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#ff5722, #ff5722), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.form-group.has-warning .help-block,
+.form-group.has-warning label.control-label {
+    color: #ff5722
+}
+
+.form-group.has-error .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-error .help-block,
+.form-group.has-error label.control-label {
+    color: #f44336
+}
+
+.form-group.has-success .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-success.is-focused .form-control {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4caf50), to(#4caf50)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#4caf50, #4caf50), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#4caf50, #4caf50), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.form-group.has-success .help-block,
+.form-group.has-success label.control-label {
+    color: #4caf50
+}
+
+.form-group.has-info .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-info.is-focused .form-control {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#03a9f4)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#03a9f4, #03a9f4), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#03a9f4, #03a9f4), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.form-group.has-info .help-block,
+.form-group.has-info label.control-label {
+    color: #03a9f4
+}
+
+.form-group textarea {
+    resize: none
+}
+
+.form-group textarea~.form-control-highlight {
+    margin-top: -11px
+}
+
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.form-group select~.material-input:after {
+    display: none
+}
+
+.form-control {
+    margin-bottom: 7px
+}
+
+.form-control::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+.checkbox label,
+.radio label,
+label {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+label.control-label {
+    font-size: 12px;
+    line-height: 1.07142857;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.help-block {
+    margin-top: 0;
+    font-size: 12px
+}
+
+.form-group {
+    padding-bottom: 7px;
+    margin: 28px 0 0 0
+}
+
+.form-group .form-control {
+    margin-bottom: 7px
+}
+
+.form-group .form-control::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .checkbox label,
+.form-group .radio label,
+.form-group label {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group label.control-label {
+    font-size: 12px;
+    line-height: 1.07142857;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.form-group .help-block {
+    margin-top: 0;
+    font-size: 12px
+}
+
+.form-group.label-floating label.control-label,
+.form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 16px;
+    line-height: 1.42857143
+}
+
+.form-group.label-floating.is-focused label.control-label,
+.form-group.label-floating:not(.is-empty) label.control-label,
+.form-group.label-static label.control-label {
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.07142857
+}
+
+.form-group.label-floating input.form-control:-webkit-autofill~label.control-label label.control-label {
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.07142857
+}
+
+.form-group.form-group-sm {
+    padding-bottom: 3px;
+    margin: 21px 0 0 0
+}
+
+.form-group.form-group-sm .form-control {
+    margin-bottom: 3px
+}
+
+.form-group.form-group-sm .form-control::-moz-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm .form-control:-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm .form-control::-webkit-input-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm .checkbox label,
+.form-group.form-group-sm .radio label,
+.form-group.form-group-sm label {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm label.control-label {
+    font-size: 9px;
+    line-height: 1.125;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.form-group.form-group-sm .help-block {
+    margin-top: 0;
+    font-size: 9px
+}
+
+.form-group.form-group-sm.label-floating label.control-label,
+.form-group.form-group-sm.label-placeholder label.control-label {
+    top: -11px;
+    font-size: 11px;
+    line-height: 1.5
+}
+
+.form-group.form-group-sm.label-floating.is-focused label.control-label,
+.form-group.form-group-sm.label-floating:not(.is-empty) label.control-label,
+.form-group.form-group-sm.label-static label.control-label {
+    top: -25px;
+    left: 0;
+    font-size: 9px;
+    line-height: 1.125
+}
+
+.form-group.form-group-sm.label-floating input.form-control:-webkit-autofill~label.control-label label.control-label {
+    top: -25px;
+    left: 0;
+    font-size: 9px;
+    line-height: 1.125
+}
+
+.form-group.form-group-lg {
+    padding-bottom: 9px;
+    margin: 30px 0 0 0
+}
+
+.form-group.form-group-lg .form-control {
+    margin-bottom: 9px
+}
+
+.form-group.form-group-lg .form-control::-moz-placeholder {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg .form-control:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg .form-control::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg .checkbox label,
+.form-group.form-group-lg .radio label,
+.form-group.form-group-lg label {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg label.control-label {
+    font-size: 14px;
+    line-height: .99999998;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.form-group.form-group-lg .help-block {
+    margin-top: 0;
+    font-size: 14px
+}
+
+.form-group.form-group-lg.label-floating label.control-label,
+.form-group.form-group-lg.label-placeholder label.control-label {
+    top: -5px;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+
+.form-group.form-group-lg.label-floating.is-focused label.control-label,
+.form-group.form-group-lg.label-floating:not(.is-empty) label.control-label,
+.form-group.form-group-lg.label-static label.control-label {
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    line-height: .99999998
+}
+
+.form-group.form-group-lg.label-floating input.form-control:-webkit-autofill~label.control-label label.control-label {
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    line-height: .99999998
+}
+
+select.form-control {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0
+}
+
+.form-group.is-focused select.form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #D2D2D2
+}
+
+.form-group.is-focused select.form-control[multiple],
+select.form-control[multiple] {
+    height: 85px
+}
+
+.input-group-btn .btn {
+    margin: 0 0 7px 0
+}
+
+.form-group.form-group-sm .input-group-btn .btn {
+    margin: 0 0 3px 0
+}
+
+.form-group.form-group-lg .input-group-btn .btn {
+    margin: 0 0 9px 0
+}
+
+.input-group .input-group-btn {
+    padding: 0 12px
+}
+
+.input-group .input-group-addon {
+    border: 0;
+    background: 0 0
+}
+
+.form-group input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100
+}
+.contact-widget-section .single-contact-widget {
+    background: #f9f9f9;
+    padding: 20px 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+    height: 260px;
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out
+}
+
+.contact-widget-section .single-contact-widget i {
+    font-size: 75px
+}
+
+.contact-widget-section .single-contact-widget h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 10px
+}
+
+.contact-widget-section .single-contact-widget p {
+    line-height: 16px
+}
+
+.contact-widget-section .single-contact-widget:hover {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+#contactForm {
+    margin-top: -10px
+}
+
+#contactForm .form-group label.control-label {
+    color: #8c8c8c
+}
+
+#contactForm .form-control {
+    font-weight: 500;
+    height: auto
+}
+
+.contact .contact-big-heading {
+	color: var(--navyblue);
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 80%;
+}
+
+
+/* FOOTER */
+.footer-arr{
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 2px solid var(--white);
+	width: 100%;
+	text-align: center;
+}
+
+
+.footer-img{
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+
+
+/* ************************************************************************************************
+ABOUT US PAGE
+***************************************************************************************************/
+/* HEADER */
+.about_bg{
+	background-image: url("../img/tech-bg.png");
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* ************************************************************************************************
+SERVICES PAGE
+***************************************************************************************************/
+.vertical-line-container{
+	width: 100%;
+	text-align: center;
+}
+
+.vertical-line{
+	width: 2px;
+	height: 100px;
+	background-color: var(--lightgray);
+	margin: auto;
+}
+
+
+
+
+@media (max-width: 570px)  { 
+	/*NAVBAR*/
+	#navbarSupportedContent{
+		background-color: var(--navyblue);
+		padding: 10px;
+		padding-bottom: 50px;
+	}
+	#navbarSupportedContent ul li,#navbarSupportedContent2 ul li{
+		margin-top: 18px;
+	}
+	.js__header-content-box{
+		text-align: center;
+	}
+	.footer-align-center{
+		text-align: center;
+	}
+
+    .js__header-contact-success p {
+        font-size: 20px;
+    }
+	
+
+}
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	/*NAVBAR*/
+	#navbarSupportedContent{
+		background-color: var(--navyblue);
+		padding: 10px;
+		padding-bottom: 50px;
+	}
+	#navbarSupportedContent ul li,#navbarSupportedContent2 ul li{
+		margin-top: 18px;
+	}
+	.js__header-content-box{
+		text-align: center;
+	}
+	.footer-align-center{
+		text-align: center;
+	}
+	.footer-link ul li a{
+		font-size: .7rem;
+	}
+	
+    .js__header-contact-success p {
+        font-size: 20px;
+    }
+	 .footer-img img{
+    width: 50% !important;
+    margin:auto;
+}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	/*NAVBAR*/
+	#navbarSupportedContent{
+		background-color: var(--navyblue);
+		padding: 10px;
+		padding-bottom: 50px;
+	}
+	#navbarSupportedContent ul li,#navbarSupportedContent2 ul li{
+		margin-top: 18px;
+	}
+	.js__header-content-box{
+		text-align: center;
+	}
+	.footer-align-center{
+		text-align: center;
+	}
+	.footer-link ul li a{
+		font-size: .7rem;
+	}	
+	
+    .js__header-contact-success p {
+        font-size: 20px;
+    }
+	
+	 .footer-img img{
+    width: 50% !important;
+    margin:auto;
+}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+		/*NAVBAR*/
+		#navbarSupportedContent{
+			background-color: var(--navyblue);
+			padding: 10px;
+			padding-bottom: 50px;
+		}
+		#navbarSupportedContent ul li,#navbarSupportedContent2 ul li{
+			margin-top: 18px;
+		}
+
+		.js__header-content-box{
+			text-align: center;
+		}
+		h3{
+			font-size: 1.2rem !important;
+		}
+
+		.section-container-blue .text-2rem{
+			font-size: 2rem !important;
+		}
+		.footer-align-center{
+			text-align: center;
+		}
+        
+    .js__header-contact-success p {
+        font-size: 25px;
+    }
+
+    .footer-img img{
+    width: 50% !important;
+    margin:auto;
+}
+	
+ }
+
+
+
+
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 	
+	
+		
+}
+@media  (max-width: 1000px) { 	
+
+	.hexa--bg img{
+		position: relative;
+		right: -300px;
+		z-index: -1;
+		margin-right: -200px !important;
+		
+	}
+	
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	
+}
